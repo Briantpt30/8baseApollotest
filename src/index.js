@@ -12,10 +12,10 @@ import {InMemoryCache} from 'apollo-cache-inmemory'
 import {setContext} from 'apollo-link-context'
 
 // api token from 8base
-const AUTH_TOKEN = 'c952c812-b850-4466-b92b-f2f597b44b5f'
+const AUTH_TOKEN = '997687fc-f9b0-4fd6-8ab9-f2bd8b87300c'
 
 //8base endpoint is placed in the uri
-const httpLink = createHttpLink({uri: 'https://api.8base.com/cjrmowyc0000001qghp3ajxap'})
+const httpLink = createHttpLink({uri: 'https://api.8base.com/cjrqm8c7z000501qcpxryywxj'})
 
     const authLink = setContext((_, {headers}) =>
     {
@@ -25,7 +25,7 @@ const httpLink = createHttpLink({uri: 'https://api.8base.com/cjrmowyc0000001qghp
             headers: {
                 ...headers,
                 // place token in authorization
-                authorization: AUTH_TOKEN ? 'Bearer ${AUTH_TOKEN}' : "",
+                authorization: AUTH_TOKEN ? `Bearer ${AUTH_TOKEN}` : "",
 
             }
         }

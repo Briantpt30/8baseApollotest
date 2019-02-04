@@ -12,10 +12,10 @@ export default class Heroes extends Component {
 
 const HeroesList = gql`
 {
-    employeesList{
+    heroesList{
         items{
             id,
-            fullName,
+            name,
         }
     }
 }
